@@ -1,9 +1,17 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/widgets.dart';
 
 class CostumContainer extends StatelessWidget {
   String text;
+  IconData icon;
+  Gradient gradient;
+  String textSmall;
+
   CostumContainer({
     required this.text,
+    required this.icon,
+    required this.gradient,
+    required this.textSmall,
     super.key,
   });
 
@@ -11,19 +19,16 @@ class CostumContainer extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       width: double.infinity,
-      height: 150,
+      height: 120,
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(15),
-        gradient: LinearGradient(colors: [
-          Colors.purple,
-          Colors.purpleAccent
-        ])
+        gradient: gradient,
       ),
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
           Icon(
-            Icons.text_fields_sharp,
+            icon,
             color: Colors.white,
             size: 50,
           ),
@@ -32,7 +37,7 @@ class CostumContainer extends StatelessWidget {
             style: TextStyle(color: Colors.white, fontSize: 22,fontWeight: FontWeight.bold),
           ),
           Text(
-            "Input or Paste Your Text",
+            textSmall,
             style: TextStyle(color: Colors.white, fontSize: 16,fontWeight: FontWeight.w300),
           ),
         ],

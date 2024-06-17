@@ -11,7 +11,25 @@ class UI1 extends StatelessWidget {
         child: Column(
           children: [
             TextField(
-              decoration: InputDecoration(border: OutlineInputBorder()),
+              decoration: InputDecoration(border: OutlineInputBorder(),label: Text("Email")),
+            ),
+            SizedBox(height: 50,),
+            Container(
+              height: 200,
+              width: 400,
+              decoration: BoxDecoration(
+                color: Colors.red,
+                borderRadius: BorderRadius.circular(15)
+              ),
+            ),
+            SizedBox(height: 20,),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceAround,
+              children: [
+                Icon(Icons.home),
+                Icon(Icons.contact_mail),
+                Icon(Icons.favorite),
+              ],
             )
           ],
         ),

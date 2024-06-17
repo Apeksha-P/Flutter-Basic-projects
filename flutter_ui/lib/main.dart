@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_ui/screens/UI1.dart';
-import 'package:flutter_ui/widgets/image_widget.dart';
+import 'package:flutter_ui/screens/text_to_speech_ui.dart';
 
 void main() {
   runApp(const MyApp());
@@ -17,7 +16,7 @@ class MyApp extends StatelessWidget {
       theme:ThemeData(
         primarySwatch: Colors.blue,
       ) ,
-      home: const UI1(),
+      home: const TextToSpeech(),
     );
   }
 }

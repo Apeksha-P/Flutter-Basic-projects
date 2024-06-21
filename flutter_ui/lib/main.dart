@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_ui/widgets/checkbox_widget.dart';
+import 'package:flutter_ui/widgets/wrap_widget.dart';
 
 void main() {
   runApp(const MyApp());
@@ -16,7 +16,7 @@ class MyApp extends StatelessWidget {
       theme:ThemeData(
         primarySwatch: Colors.blue,
       ) ,
-      home: const CheckBoxWidget(),
+      home: const WrapWidget(),
     );
   }
 }

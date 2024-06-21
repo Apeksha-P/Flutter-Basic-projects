@@ -14,7 +14,10 @@ class ButtonWidget extends StatelessWidget {
           children: [
             IconButton(onPressed: () {
               print("Pressed");
-            }, icon: Icon(Icons.favorite,color: Colors.redAccent,))
+            }, icon: Icon(Icons.favorite,color: Colors.redAccent,)),
+            TextButton(onPressed: () {
+               print("Save");
+            }, child: Text("Save"),)
           ],
         ),
       ),

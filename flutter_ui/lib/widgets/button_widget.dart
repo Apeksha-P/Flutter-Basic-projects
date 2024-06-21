@@ -17,7 +17,14 @@ class ButtonWidget extends StatelessWidget {
             }, icon: Icon(Icons.favorite,color: Colors.redAccent,)),
             TextButton(onPressed: () {
                print("Save");
-            }, child: Text("Save"),)
+            }, child: Text("Save"),),
+            FilledButton(onPressed: () {
+              print("Save");
+            }, child: Text("Save")),
+            OutlinedButton(onPressed: () {
+              print("Out line BUtton");
+            }, child: Text("Save")),
+            ElevatedButton(onPressed: (){print("Elevated Button");}, child: Text("Save"),)
           ],
         ),
       ),
